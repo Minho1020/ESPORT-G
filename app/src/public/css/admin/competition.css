@@ -1,0 +1,157 @@
+.menu_list > li:nth-child(1)::after {
+    transform: scaleX(1) translateY(100%);
+}
+.main_title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+    margin: 20px 30px;
+}
+
+.form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.form > div {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin: 20px 0;
+    margin-left: 30px;
+}
+.form > div > span {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 500;
+    color: aliceblue;
+    text-align: center;
+    width: 100px;
+    display: flex;
+    justify-content: left;
+    font-size: 18px;
+}
+.gametype > input[type="radio"] {
+    margin: auto 0;
+}
+.form > div > select {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+    width: 300px;
+    text-align: left;
+}
+.form > div > select > option:nth-child(1) {
+    text-align: center;
+}
+.form > div > input[type="number"] {
+    width: 300px;
+    font-size: 20px;
+    font-family: "Elice Digital Baeum",sans-serif;
+}
+.form > div > p {
+    font-size: 20px;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 600;
+}
+.form > div > input[type="datetime-local"] {
+    width: 300px;
+    font-size: 20px;
+    font-family: "Elice Digital Baeum",sans-serif;
+}
+.form > div > textarea {
+    font-size: 17px;
+    font-family: "Elice Digital Baeum",sans-serif;
+    resize: none;
+}
+.form > button {
+    border: 0;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    background-color: #999;
+}
+.form > button {
+    margin-top: 50px;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    color: #DB4455;
+    border: solid 1px #DB4455;
+    padding: 15px 70px;
+    font-size: 20px;
+    margin-left: 130px;
+    cursor: pointer;
+}
+.form > button:hover {
+    background-color: #DB4455;
+    color: #FFFAFA;
+}
+
+
+
+
+
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: all .35s;
+}
+
+.list_slide {
+    border-radius: 15px;
+    background-color: #ffffff;
+    height: 430px;
+    width: 310px;
+    display: flex;
+    transition: all .35s;
+    justify-content: center;
+    transition: all .35s;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    align-items: center;    
+    margin-left: 30px;
+}
+.options {
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    justify-content: left;
+}
+.options > div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.options > div > select {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 250px;
+    text-align: left;
+}
+.options > div > input[type="number"] {
+    width: 250px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: "Elice Digital Baeum",sans-serif;
+}
+.options > div > span {
+    font-size: 20px;
+    color: white;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 600;
+}

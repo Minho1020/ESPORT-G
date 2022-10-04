@@ -1,0 +1,697 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'SDSamliphopangche_Basic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body { 
+    height: 4000px;
+    /* background: linear-gradient(to right,rgba(102, 102, 102, 0.5),rgb(255, 255, 255),white,rgba(102, 102, 102, 0.5)); */
+    overflow-x: hidden;
+    background-color: #fafafa;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 7;
+    box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.6);
+    background-color: white;
+    top: 0;
+}
+header::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+/* 메인 헤더 */
+.main_header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 3px #111;
+}
+.header_title {
+    padding: 25px 40px 15px 40px;
+}
+.header_title > a {
+    text-decoration: none;
+    font-family: 'SDSamliphopangche_Basic';
+    /* background: linear-gradient(to right,#DB4455, #0096c6); */
+    text-align: center;
+    justify-self: center;
+    color: #DB4455;
+    font-weight: 500;
+    font-size: 38px;
+    /* color: transparent;
+    -webkit-background-clip: text; */
+    margin: 0 auto;
+}
+.my_page {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.my_info {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.login_btn > a {
+    text-decoration: none;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #DB4455;
+    font-weight: 600;
+    padding: 7px 40px;
+    border: solid 2px #DB4455;
+}
+.login_btn > a:hover {
+    background-color: #DB4455;
+    color: #FFFAFA;
+}
+.my_page {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+.my_profile_id {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 8px 15px;
+}
+.my_profile_id > a:nth-child(1) {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #DB4455;
+    width: fit-content;
+}
+.my_profile_id > span {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #292929;
+}
+.my_profile_link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.my_profile_link > a:nth-child(1) {
+    padding-top: 5px;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #292929;
+    text-align: left;
+    text-decoration: none;
+    width: fit-content;
+}
+.my_profile_link > a:nth-child(2) {
+    padding-top: 5px;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #DB4455;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    width: fit-content;
+}
+.my_profile_link > a:nth-child(1):hover {
+    text-decoration: underline;
+    text-decoration-color: #292929;
+}
+.my_profile_link > a:nth-child(2):hover {
+    text-decoration: underline;
+    text-decoration-color: #DB4455;
+}
+/* 메인 헤더 */
+
+
+
+
+
+/* 네비게이션 바 */
+
+.nav_header {
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+}
+.nav_menu_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 4;
+    position: relative;
+}
+.nav_menu_list::before {
+    display: none;
+    content: '';
+    position: absolute;
+    top: 44px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #111;
+}
+.menu_list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    height: auto;
+    position: relative;
+}
+.menu_list > div {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 176px;
+}
+.menu_list > div { 
+    display:inline-block; 
+    border-spacing: 5px;
+    text-transform:uppercase;
+    position: relative;
+}
+.menu_list > div:after {
+    display:block;
+    content: '';
+    top: 37px;
+    z-index: 5;
+    position: absolute;
+    width: 177px;
+    height:5px;  
+    background-color: #DB4455;
+    transform: scaleX(0) translateY(100%);  
+    transition: transform 250ms ease-in-out;
+}
+.menu_list > div:hover:after { transform: scaleX(1) translateY(100%);  }
+
+.nav_menu_list:hover > .menu_list > div > ul  {
+    display: flex;
+}
+.nav_menu_list:hover > .menu_list > hr  {
+    display: block;
+}
+.nav_menu_list:hover::before  {
+    display: block;
+}
+.menu_list > div > li {
+    width: 100%;
+    margin: 5px 0;
+}
+.menu_list > div > li > a {
+    text-decoration: none;
+    font-family: "Elice Digital Baeum",sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    width: 100%;
+    font-size: 21px;
+    padding: 5px 10px;
+    text-align: center;
+}
+.menu_lanking_news {
+    display: none;                          
+    align-items: center;
+    justify-content: center;
+}
+.menu_lanking_news > span {
+    text-decoration: none;
+    font-family: "Elice Digital Baeum",sans-serif;
+    color: #111;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.menu_list > div > ul {
+    position: relative;
+    margin: 25px 0;
+    z-index: 4;
+    display: none;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    height: 240px;
+    border-left: solid 1px black;
+    padding-left: 0;
+}
+.menu_list > div:last-child > ul     {
+    border-right: solid 1px black;
+}
+.menu_list > hr {
+    position: relative;
+    display: none;
+    top: 10px;
+    width: 1px;
+    height: 200px;
+    align-self: center;
+    border: 0;
+    background-color: rgb(0, 0, 0);
+}
+.menu_list > div > ul > li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 175px;
+}
+.menu_list > div > ul > li > a {
+    text-decoration: none;
+    font-family: "Elice Digital Baeum",sans-serif;
+    color: #333;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 5px 10px;
+    text-align: left;
+}
+.menu_list > div > ul > li > a:hover   {
+    text-decoration: underline;
+    text-decoration-color: #111;
+}
+/* 네비게이션 바 */
+
+
+
+
+
+/* 사이드 오픈 버튼 */
+
+#open_btn {
+    display: none;
+    z-index: 10;
+    position: relative;
+    width: 40px;    
+    height: 36px;
+    margin-right: 25px;
+}
+#open_btn > span {
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    background-color: #333;
+    transition: all .35s;
+}
+.open_on {
+    transition: all .35s;
+    transform: rotateZ(90deg);
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 36px;
+    transition-delay: .2s;
+}
+.open_on > span {
+    transition-delay: .2s;
+}
+.open_on > span:nth-child(1)  {
+    top: 50%;
+    transform: rotateZ(-45deg);
+    transition-delay: 1s;
+}
+.open_on > span:nth-child(2)  {
+    top:50%;
+    transform:translateY(-50%);
+    opacity: 0;
+}
+.open_on > span:nth-child(3)  {
+    top: 50%;
+    transform: rotateZ(45deg);
+    transition-delay: 1s;
+    
+}
+.open_off > span:nth-child(1)  {
+    top: 0;
+}
+.open_off > span:nth-child(2)  {
+    top:50%;
+    transform:translateY(-50%);
+}
+.open_off > span:nth-child(3)  {
+    bottom: 0;
+}
+.open_off  {
+    transition: all .35s;
+    transition-delay: .2s;
+}
+/* 사이드 오픈 버튼 */
+
+
+
+
+
+/* 사이드 메뉴 */
+.sidebar {
+    position: absolute;
+    width: 400px;
+    height: 1500px;
+    top: 0;
+    right: -402px;
+    z-index: 8; 
+    display: none;
+    background-color: #fafafa;
+    transition: all .4s;
+    border-left: solid 2px #999;
+    overflow: auto;
+}
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+.sidemenu_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1000px;
+}
+#sidemenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.panel_sidemenu {
+    padding-left: 0;
+    margin-left: 20px;
+    transition: all .2s;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    border-top: solid 2px #999;
+    transition: max-height 0.2s ease-out;
+}
+.menu_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s;
+}
+.menu_title:hover {
+    background-color: #bdbdbd;
+}
+.menu_title > a{
+    text-decoration: none;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 30px;
+    color: #292929;
+    text-align: left;
+    margin-left: 20px;
+    padding: 10px 0;
+    font-weight: 600;
+}
+.menu_title > i{
+    font-size: 25px;
+    padding-right: 20px;
+    cursor: pointer;
+    transform: rotateX(180deg);
+}
+.active > i {
+    transform: rotateX(360deg);
+    transition: all .1s;
+    transform-origin: center;
+}
+.panel_sidemenu > li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+.panel_sidemenu > li > a {
+    text-decoration: none;
+    font-family: "Elice Digital Baeum",sans-serif;
+    color: #292929;
+    font-size: 20px;
+    padding: 5px 10px;
+    font-weight: 600;
+    padding: 10px 10px;
+    text-align: left;
+    width: 100%;
+}
+.panel_sidemenu > li:hover {
+    background-color: #bdbdbd;
+    border-radius: 5px;
+}
+.sidebar_wrap {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.99);
+    opacity: 0.5;
+    justify-content: center;
+    align-items: center;
+}
+
+.my_page_sidemenu {
+    margin-top: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+.my_info_sidemenu {
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my_info_sidemenu > a {
+    text-decoration: none;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #DB4455;
+    font-weight: 600;
+    padding: 12px 100px;
+    border: solid 2px #DB4455;
+    margin-bottom: 120px;
+}
+.my_info_sidemenu > a:hover {
+    background-color: #DB4455;
+    color: #FFFAFA;
+}
+.sidebar_top {
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    z-index: 10;
+    background-color: #fafafa;
+}
+
+.my_profile_id_sidemenu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.my_profile_id_sidemenu > a:nth-child(1) {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #DB4455;
+    width: fit-content;
+}
+.my_profile_id_sidemenu > span {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    text-decoration: none;
+    color: #292929;
+}
+.my_profile_link_sidemenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.my_profile_link_sidemenu > a:nth-child(1) {
+    padding-top: 5px;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #292929;
+    text-decoration: none;
+    width: fit-content;
+}
+.my_profile_link_sidemenu > a:nth-child(2) {
+    padding-top: 5px;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #DB4455;
+    text-decoration: none;
+    width: fit-content;
+}
+.my_profile_link_sidemenu > a:nth-child(1):hover{
+    text-decoration: underline;
+    text-decoration-color: #292929;
+}
+.my_profile_link_sidemenu > a:nth-child(2):hover {
+    text-decoration: underline;
+    text-decoration-color: #DB4455;
+}
+.my_info_sidemenu {
+    width: 85%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.my_esportgpay_sidemenu {
+    cursor: pointer;
+    background-color: #292929;
+    flex-direction: column;
+    padding: 0 15px;
+    width: 80%;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.gpay_title_sidemenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+.gpay_title_sidemenu > span {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 23px;
+    color: #DB4455;
+}
+.gpay_title_sidemenu > a {
+    text-decoration: none;
+    color: #fafafa;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 17px;
+}
+.gmoney_title_sidemenu {
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Elice Digital Baeum",sans-serif;
+}
+/* 사이드 메뉴 */
+@media screen and (max-width: 1150px) {
+    .nav_menu_list {
+        display: none;
+    }
+    #open_btn {
+        display: block;
+    }
+    .menu_lanking_news {
+        position: absolute;
+    }
+    .sidebar {display: block;}
+    .my_page {
+        display: none;
+    }
+    .main_header {
+        border-bottom: 0;
+    }
+}
+@media screen and (max-width: 560px) {
+    .link_family > a > span {
+        display: none;
+    }
+    .link_family {
+        margin-left: 20px;
+    }
+    .link_family > a {
+        font-size: 20px;
+        padding: 1px 20px;
+    }
+    .main_title > a {
+        font-size: 35px;
+    }
+    .menu_list {height: 35px;}
+    .nav_menu_list {
+        padding-left: 20px;
+    }
+    .menu_lanking_news >span {
+        font-size: 15px;
+    }
+    #open_btn {
+        width: 35px;    
+        height: 31px;
+        margin-right: 15px;
+    }
+    #open_btn > span {
+        width: 35px;
+        height: 5px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .link_family > a > span {
+        display: none;
+    }
+    .link_family {
+        margin-left: 20px;
+    }
+    .link_family > a {
+        font-size: 20px;
+        padding: 1px 20px;
+    }
+    .main_title > a {
+        font-size: 35px;
+    }
+    .menu_list {height: 35px;}
+    .nav_menu_list {
+        padding-left: 20px;
+    }
+    .menu_lanking_news >span {
+        font-size: 15px;
+    }
+    #open_btn {
+        width: 35px;    
+        height: 31px;
+        margin-right: 15px;
+    }
+    #open_btn > span {
+        width: 35px;
+        height: 5px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}

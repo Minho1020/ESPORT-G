@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="//font.elice.io/EliceDigitalBaeum.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/home/card.css">
+    <link rel="stylesheet" href="/css/admin/header.css">
+    <link rel="stylesheet" href="/css/admin/competition.css">
+    <script src="/js/admin/competition.js" defer></script>
+    <title>ESPORT G ADMIN</title>
+</head>
+<body>
+    <header>
+        <nav class="main_header">
+            <div class="header_title"><a href="/admin"><span>ESPORT G</span></a></div>
+            <div class="menu_list">
+                <li><a href="/admin/competition">대회</a></li>
+                <li><a href="/admin/adver">광고</a></li>
+                <li><a href="/admin/notice">공지</a></li>
+                <li><a href="/admin/news">뉴스</a></li>
+                <li><a href="/admin/faq">FAQ</a></li>
+                <li><a href="/admin/user">유저</a></li>
+            </div>
+        </nav>
+    </header>
+    <div class="sidemenu">
+        <div class="menu">
+            <li class="menu1"><a href="/admin/competition" class="menu_link">대회 포스팅</a></li>
+            <li class="menu2"><a href="/admin/competition/all" class="menu_link">모든 대회</a></li>
+            <li class="menu3"><a href="/admin/competition/ing" class="menu_link">진행중인 대회</a></li>
+            <li class="menu4"><a href="/admin/competition/will" class="menu_link">예정된 대회</a></li>
+            <li class="menu5"><a href="/admin/competition/end" class="menu_link">종료된 대회</a></li>
+        </div>
+    </div>
+    <section id="page1" class="competition_posting">
+        <div class="main_title"><span>대회 포스팅</span></div>
+        <div class="form">
+            <div class="gametype">
+                <span>게임 선택 :</span>
+                <select name="game_type" id="game_type">
+                    <option value="" disabled selected>--게임을 선택해주세요--</option>
+                    <option value="kakaoBattleground_all">카카오 배틀그라운드</option>
+                    <option value="steamBattleground_all">스팀 배틀그라운드</option>
+                    <option value="overwatch_all">오버워치</option>
+                    <option value="valorant_all">발로란트</option>
+                </select>
+            </div>
+            <div class="eglevel">
+                <span>등급 선택 :</span>
+                <select name="eglevel" id="eglevel">
+                    <option value="" disabled selected>--등급을 선택해주세요--</option>
+                    <option value="bronze_all">브론즈</option>
+                    <option value="silver_all">실버</option>
+                    <option value="gold_all">골드</option>
+                    <option value="platinum_all">플래티넘</option>
+                    <option value="diamond_all">다이아몬드</option>
+                    <option value="master_all">마스터</option>
+                    <option value="talent_all">탤런트</option>
+                </select>
+            </div>
+            <div class="reward">
+                <span>상금 :</span>
+                <input type="number" name="reward" id="reward" placeholder="상금을 입력해주세요">&emsp;
+                <p>EG COIN</p>
+            </div>
+            <div class="join_pay">
+                <span>참가비 :</span>
+                <input type="number" name="join_pay" id="join_pay" placeholder="참가비를 입력해주세요">&emsp;
+                <p>EG COIN</p>
+            </div>
+            <div class="total">
+                <span>총 참가인원 :</span>
+                <input type="number" name="total_member" id="total_member" placeholder="총 참가인원을 입력해주세요">&emsp;
+                <p>명</p>
+            </div>
+            <div class="start_date">
+                <span>시작 일시 :</span>
+                <input type="datetime-local" name="start_date" id="start_date">
+            </div>
+            <div class="end_date">
+                <span>마침 일시 :</span>
+                <input type="datetime-local" name="end_date" id="end_date">
+            </div>
+            <div class="more_dec">
+                <span>설명 :</span>
+                <textarea name="more_dec" id="more_dec" cols="100" rows="30" placeholder="내용을 입력해 주세요"></textarea>
+            </div>
+            <button id="post_btn">포스팅하기</button>
+        </div>
+    </section>
+    <section id="page2" class="competition_posting">
+        <div class="main_title"><span>모든 대회</span></div>
+        <div class="options">
+            <div>
+                <span>게임 선택 :</span>
+                <select name="game_type_all" id="game_type_all">
+                    <option value="all">전체</option>
+                    <option value="kakaoBattleground">카카오 배틀그라운드</option>
+                    <option value="steamBattleground">스팀 배틀그라운드</option>
+                    <option value="overwatch">오버워치</option>
+                    <option value="valorant">발로란트</option>
+                </select>
+            </div>
+            <div>
+                <span>등급 선택 :</span>
+                <select name="eglevel_all" id="eglevel_all">
+                    <option value="all"selected>전체</option>
+                    <option value="bronze">브론즈</option>
+                    <option value="silver">실버</option>
+                    <option value="gold">골드</option>
+                    <option value="platinum">플래티넘</option>
+                    <option value="diamond">다이아몬드</option>
+                    <option value="master">마스터</option>
+                    <option value="talent">탤런트</option>
+                </select>
+            </div>
+            <div>
+                <span>정렬 :</span>
+                <select name="order_all" id="order_all">
+                    <option value="">전체</option>
+                    <optgroup id="reward_all" label="----상금----">
+                        <option value="top">상금 높은 순</option>
+                        <option value="bottom">상금 낮은 순</option>
+                    </optgroup>
+                    <optgroup id="join_pay_all" label="----참가비----">
+                        <option value="high">참가비 높은 순</option>
+                        <option value="low">참가비 낮은 순</option>
+                    </optgroup>
+                    <optgroup id="total_member_all" label="----총 참가인원----">
+                        <option value="many">참가인원 많은 순</option>
+                        <option value="little">참가인원 적은 순</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="swiper-slide list_slide">
+                <div class="slide_inner_wrapper">
+                    <div class="inner_title">
+                        <div class="title_game"><img class="battleground" src="/img/BATTLEGROUNDS_OG.png" alt="">&emsp;<img class="kakaogames" src="/img/Steam_logo.png" alt=""></div>
+                        <div class="title_level"></div>
+                    </div>
+                    <div class="winner_pay"><p>상금 : </p><span>&nbsp;110만원</span></div>
+                    <div class="inner_info">
+                        <div class="info_key">
+                            <li><span>일시 :</span></li>
+                            <li><span>게임 :</span></li>
+                            <li><span>상금 :</span></li>
+                            <li><span>설명 :</span></li>
+                        </div>
+                        <div class="info_value">
+                            <li><span>&nbsp;2022년 1월 22일 ~ 25일</span></li>
+                            <li><span>&nbsp;발로란트</span></li>
+                            <li><span>&nbsp;110만원</span></li>
+                            <li><span>&nbsp;인도하겠다는 가치끓는 이것을 우는 원질</span></li>
+                        </div>
+                    </div>
+                    <div class="inner_btn">
+                        <Button>자세히 보기</Button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="page3" class="competition_posting"></section>
+    <section id="page4" class="competition_posting"></section>
+    <section id="page5" class="competition_posting"></section>
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/user/lookforpw.css">
+    <script src="/js/user/lookforpw.js" defer></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="//font.elice.io/EliceDigitalBaeum.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+    <title>ESPORT G</title>
+</head>
+<body>
+    <header>
+        <div class="main_header">
+            <div class="main_title"><a href="">ESPORT G</a></div>
+        </div>
+    </header>
+    <div class="login_page">
+        <div class="form" method="post">
+            <div class="login_title"><span>새 비밀번호</span></div>
+            <div class="login-form">
+                <div class="input">
+                    <input id="email" type="email" placeholder="이메일"/>
+                    <Button id="mailer">인증번호 발송</Button>
+                </div>
+
+                <div class="input">
+                    <input id="ctf_number" type="text" placeholder="인증번호"/>
+                    <Button id="checker">인증</Button>
+                </div>
+                <p id="next_btn">다음으로</p>
+            </div>
+        </div>
+    </div>
+    <div class="newPw_page">
+        <div class="form" method="post">
+            <div class="login_title"><span>새 비밀번호</span></div>
+            <div class="new-form">
+
+                <div class="id">
+                    <input id="id" type="text" placeholder="아이디"/>
+                    <div class="checkbox">
+                        <i class="far fa-times-circle"></i>
+                        <i class="far fa-check-circle"></i>
+                    </div>
+                </div>
+
+                <div class="psword">
+                    <input id="psword" type="password" placeholder="새 비밀번호"/>
+                    <div class="checkbox">
+                        <i class="far fa-times-circle"></i>
+                        <i class="far fa-check-circle"></i>
+                    </div>
+                </div>
+
+                <p class="error_info" id="er_psword">영어 대소문자 + 숫자 + 특수문자&emsp;8자 이상</p>
+
+                <div class="confirm-psword">
+                    <input id="confirm-psword" type="password" placeholder="비밀번호 확인"/>
+                    <div class="checkbox">
+                        <i class="far fa-times-circle"></i>
+                        <i class="far fa-check-circle"></i>
+                    </div>
+                </div>
+
+                <p class="error_info" id="er_confirm-psword">비밀번호 일치</p>
+                
+                <a id="new_btn">다음으로</a>    
+            </div>
+        </div>
+    </div>
+    <div class="id_page">
+        <div class="form" method="post">
+            <div class="login_title"><span>비밀번호 변경</span></div>
+            <div class="login-form">
+                <span>비밀번호 변경이 완료되었습니다</span>
+                
+                <a href="/login" id="new_btn">완료</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="//font.elice.io/EliceDigitalBaeum.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/home/header.css">
+    <link rel="stylesheet" href="/css/home/card.css">
+    <link rel="stylesheet" href="/css/home/competition.css">
+    <script src="/js/home/header.js"></script>
+    <script src="/js/home/competition.js" defer></script>
+    <title>ESPORT G</title>
+</head>
+<body>
+    <header>
+        <nav class="main_header">
+            <div class="header_title"><a href="/">ESPORT G</a></div>
+            <div class="my_page">
+                <div class="my_info">
+                    <%- my %>
+                </div>
+            </div>
+            <div id="open_btn" class="open_off">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="sidebar">
+                <div class="sidebar_top"></div>
+                <div class="my_page_sidemenu">
+                    <%- myside %>
+                </div>
+                <div class="sidemenu_list">
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="/competition">대회</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="/competition">모든 대회</a></li>
+                            <li><a href="/competition/ing">진행중인 대회</a></li>
+                            <li><a href="/competition/will">예정된 대회</a></li>
+                            <li><a href="/competition/end">종료된 대회</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="/notice">공지</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="/notice">공지사항</a></li>
+                            <li><a href="/notice/event">이벤트</a></li>
+                            <li><a href="/notice/update">업데이트</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="#">뉴스</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="">이번주 소식</a></li>
+                            <li><a href="">이번달 소식</a></li>
+                            <li><a href="">모든 소식</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="#">FAQ</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="">가이드</a></li>
+                            <li><a href="">청약철회</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="#">상점</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="">G PAY</a></li>
+                            <li><a href="">이벤트 상점</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="#">고객센터</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="">고객센터</a></li>
+                            <li><a href="">이의신청</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav_header">
+            <ul class="nav_menu_list">
+                <div class="menu_list">
+
+                    <div>
+                        <li><a href="/competition">대회</a></li>
+                        <ul class="menu_1">
+                            <div class="menu_stick"></div>
+                            <li><a href="/competition">모든 대회</a></li>
+                            <li><a href="/competition/ing">진행중인 대회</a></li>
+                            <li><a href="/competition/will">예정된 대회</a></li>
+                            <li><a href="/competition/end">종료된 대회</a></li>
+                        </ul>
+                    </div>
+ 
+                    <div>
+                        <li><a href="/notice">공지</a></li>
+                        <ul class="menu_2">
+                            <div class="menu_stick"></div>
+                            <li><a href="/notice">공지사항</a></li>
+                            <li><a href="/notice/event">이벤트</a></li>
+                            <li><a href="/notice/update">업데이트</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <li><a href="">뉴스</a></li>
+                        <ul class="menu_3">
+                            <div class="menu_stick"></div>
+                            <li><a href="">이번주 소식</a></li>
+                            <li><a href="">이번달 소식</a></li>
+                            <li><a href="">모든 소식</a></li>
+                        </ul>
+                    </div>
+  
+                    <div>
+                        <li><a href="">FAQ</a></li>
+                        <ul class="menu_4">
+                            <div class="menu_stick"></div>
+                            <li><a href="">가이드</a></li>
+                            <li><a href="">청약철회</a></li>
+                        </ul>
+                    </div>
+         
+                    <div>
+                        <li><a href="">상점</a></li>
+                        <ul class="menu_5">
+                            <div class="menu_stick"></div>
+                            <li><a href="">G PAY</a></li>
+                            <li><a href="">이벤트 상점</a></li>
+                        </ul>
+                    </div>
+            
+                    <div>
+                        <li><a href="">고객센터</a></li>
+                        <ul class="menu_6">
+                            <div class="menu_stick"></div>
+                            <li><a href="">대회 신청</a></li>
+                            <li><a href="">고객센터</a></li>
+                            <li><a href="">이의신청</a></li>
+                        </ul>
+                    </div>
+   
+                </div>
+                <div class="menu_lanking_news">
+                    <span>[ E 스포츠 대회 매칭 플랫폼 ]</span>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="sidebar_wrap"></div>
+    
+    <section class="competition_all">
+        <div class="downmenu_all">
+            <li class="menu1"><a class="menu_link" href="/competition">모든 대회</a></li>
+            <hr>
+            <li class="menu2"><a class="menu_link" href="/competition/ing">진행중인 대회</a></li>
+            <hr>
+            <li class="menu3"><a class="menu_link" href="/competition/will">예정된 대회</a></li>
+            <hr>
+            <li class="menu4"><a class="menu_link" href="/competition/end">종료된 대회</a></li>
+        </div>
+        <div class="page_all">
+            <div id="page1" class="competition_page">
+                <div class="options">
+                    <div>
+                        <span>게임 선택 :</span>
+                        <select name="game_type_all" id="game_type_all">
+                            <option value="all">전체</option>
+                            <option value="kakaoBattleground">카카오 배틀그라운드</option>
+                            <option value="steamBattleground">스팀 배틀그라운드</option>
+                            <option value="overwatch">오버워치</option>
+                            <option value="valorant">발로란트</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>등급 선택 :</span>
+                        <select name="eglevel_all" id="eglevel_all">
+                            <option value="all"selected>전체</option>
+                            <option value="bronze">브론즈</option>
+                            <option value="silver">실버</option>
+                            <option value="gold">골드</option>
+                            <option value="platinum">플래티넘</option>
+                            <option value="diamond">다이아몬드</option>
+                            <option value="master">마스터</option>
+                            <option value="talent">탤런트</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>정렬 :</span>
+                        <select name="order_all" id="order_all">
+                            <option value="">전체</option>
+                            <optgroup id="reward_all" label="----상금----">
+                                <option value="top">상금 높은 순</option>
+                                <option value="bottom">상금 낮은 순</option>
+                            </optgroup>
+                            <optgroup id="join_pay_all" label="----참가비----">
+                                <option value="high">참가비 높은 순</option>
+                                <option value="low">참가비 낮은 순</option>
+                            </optgroup>
+                            <optgroup id="total_member_all" label="----총 참가인원----">
+                                <option value="many">참가인원 많은 순</option>
+                                <option value="little">참가인원 적은 순</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="wrap_wrapper">
+                    <div class="wrap">
+                    </div>
+                </div>
+            </div>
+            <div id="page2" class="competition_page">
+                <div class="options">
+                    <div>
+                        <span>게임 선택 :</span>
+                        <select name="game_type_all" id="game_type_all">
+                            <option value="all">전체</option>
+                            <option value="kakaoBattleground">카카오 배틀그라운드</option>
+                            <option value="steamBattleground">스팀 배틀그라운드</option>
+                            <option value="overwatch">오버워치</option>
+                            <option value="valorant">발로란트</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>등급 선택 :</span>
+                        <select name="eglevel_all" id="eglevel_all">
+                            <option value="all"selected>전체</option>
+                            <option value="bronze">브론즈</option>
+                            <option value="silver">실버</option>
+                            <option value="gold">골드</option>
+                            <option value="platinum">플래티넘</option>
+                            <option value="diamond">다이아몬드</option>
+                            <option value="master">마스터</option>
+                            <option value="talent">탤런트</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>정렬 :</span>
+                        <select name="order_all" id="order_all">
+                            <option value="">전체</option>
+                            <optgroup id="reward_all" label="----상금----">
+                                <option value="top">상금 높은 순</option>
+                                <option value="bottom">상금 낮은 순</option>
+                            </optgroup>
+                            <optgroup id="join_pay_all" label="----참가비----">
+                                <option value="high">참가비 높은 순</option>
+                                <option value="low">참가비 낮은 순</option>
+                            </optgroup>
+                            <optgroup id="total_member_all" label="----총 참가인원----">
+                                <option value="many">참가인원 많은 순</option>
+                                <option value="little">참가인원 적은 순</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="wrap_wrapper">
+                    <div class="wrap">
+                    </div>
+                </div>
+            </div>
+            <div id="page3" class="competition_page">
+                <div class="options">
+                    <div>
+                        <span>게임 선택 :</span>
+                        <select name="game_type_all" id="game_type_all">
+                            <option value="all">전체</option>
+                            <option value="kakaoBattleground">카카오 배틀그라운드</option>
+                            <option value="steamBattleground">스팀 배틀그라운드</option>
+                            <option value="overwatch">오버워치</option>
+                            <option value="valorant">발로란트</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>등급 선택 :</span>
+                        <select name="eglevel_all" id="eglevel_all">
+                            <option value="all"selected>전체</option>
+                            <option value="bronze">브론즈</option>
+                            <option value="silver">실버</option>
+                            <option value="gold">골드</option>
+                            <option value="platinum">플래티넘</option>
+                            <option value="diamond">다이아몬드</option>
+                            <option value="master">마스터</option>
+                            <option value="talent">탤런트</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>정렬 :</span>
+                        <select name="order_all" id="order_all">
+                            <option value="">전체</option>
+                            <optgroup id="reward_all" label="----상금----">
+                                <option value="top">상금 높은 순</option>
+                                <option value="bottom">상금 낮은 순</option>
+                            </optgroup>
+                            <optgroup id="join_pay_all" label="----참가비----">
+                                <option value="high">참가비 높은 순</option>
+                                <option value="low">참가비 낮은 순</option>
+                            </optgroup>
+                            <optgroup id="total_member_all" label="----총 참가인원----">
+                                <option value="many">참가인원 많은 순</option>
+                                <option value="little">참가인원 적은 순</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="wrap_wrapper">
+                    <div class="wrap">
+                    </div>
+                </div>
+            </div>
+            <div id="page4" class="competition_page">
+                <div class="options">
+                    <div>
+                        <span>게임 선택 :</span>
+                        <select name="game_type_all" id="game_type_all">
+                            <option value="all">전체</option>
+                            <option value="kakaoBattleground">카카오 배틀그라운드</option>
+                            <option value="steamBattleground">스팀 배틀그라운드</option>
+                            <option value="overwatch">오버워치</option>
+                            <option value="valorant">발로란트</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>등급 선택 :</span>
+                        <select name="eglevel_all" id="eglevel_all">
+                            <option value="all"selected>전체</option>
+                            <option value="bronze">브론즈</option>
+                            <option value="silver">실버</option>
+                            <option value="gold">골드</option>
+                            <option value="platinum">플래티넘</option>
+                            <option value="diamond">다이아몬드</option>
+                            <option value="master">마스터</option>
+                            <option value="talent">탤런트</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>정렬 :</span>
+                        <select name="order_all" id="order_all">
+                            <option value="">전체</option>
+                            <optgroup id="reward_all" label="----상금----">
+                                <option value="top">상금 높은 순</option>
+                                <option value="bottom">상금 낮은 순</option>
+                            </optgroup>
+                            <optgroup id="join_pay_all" label="----참가비----">
+                                <option value="high">참가비 높은 순</option>
+                                <option value="low">참가비 낮은 순</option>
+                            </optgroup>
+                            <optgroup id="total_member_all" label="----총 참가인원----">
+                                <option value="many">참가인원 많은 순</option>
+                                <option value="little">참가인원 적은 순</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="wrap_wrapper">
+                    <div class="wrap">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+</body>
+</html>

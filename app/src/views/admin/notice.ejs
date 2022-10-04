@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="//font.elice.io/EliceDigitalBaeum.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/ckeditor5/31.1.0/classic/ckeditor.js"></script>
+    <link rel="stylesheet" href="/css/admin/header.css">
+    <link rel="stylesheet" href="/css/admin/notice.css">
+    <script src="/js/admin/notice.js" defer></script>
+    <title>ESPORT G ADMIN</title>
+</head>
+<body>
+    <header>
+        <nav class="main_header">
+            <div class="header_title"><a href="/admin"><span>ESPORT G</span></a></div>
+            <div class="menu_list">
+                <li><a href="/admin/competition">대회</a></li>
+                <li><a href="/admin/adver">광고</a></li>
+                <li><a href="/admin/notice">공지</a></li>
+                <li><a href="/admin/news">뉴스</a></li>
+                <li><a href="/admin/faq">FAQ</a></li>
+                <li><a href="/admin/user">유저</a></li>
+            </div>
+        </nav>
+    </header>
+    <div class="sidemenu">
+        <div class="menu">
+            <li class="menu1"><a href="/admin/notice" class="menu_link">모든 공지</a></li>
+            <li class="menu2"><a href="/admin/notice/posting" class="menu_link">공지 포스팅</a></li>
+        </div>
+    </div>
+    <section id="page2" class="competition_posting">
+        <div class="main_title"><span>공지 포스팅</span></div>
+        <div class="header_editor">
+            <div class="title_editor">
+                <span>제목 :</span>
+                <input type="text" id="title" placeholder="제목을 입력해주세요">
+            </div>
+            <div class="division_editor">
+                <span>구분 :</span>
+                <select name="notice_type" id="notice_type">
+                    <option value="notice_all">공지사항</option>
+                    <option value="event_all">이벤트</option>
+                    <option value="update_all">업데이트</option>
+                </select>
+            </div>
+        </div>
+        <div class="preview_editor">
+            <span>미리보기 :</span>        
+            <textarea name="preview" id="preview"></textarea>
+        </div>
+        <textarea name="editor" id="editor" >
+        </textarea>
+        <div class="submit">
+            <button id="cancel">취소</button>
+            <button id="submit">등록</button>
+        </div>
+    </section>
+    <section id="page1" class="competition_posting">
+        <div class="notice_all">
+            <div class="downmenu_all">
+                <li class="menu_1"><a class="menu_link">전체</a></li>
+                <hr>
+                <li class="menu_2"><a class="menu_link">공지사항</a></li>
+                <hr>
+                <li class="menu_3"><a class="menu_link" >이벤트</a></li>
+                <hr>
+                <li class="menu_4"><a class="menu_link">업데이트</a></li>
+            </div>
+            <div class="division">
+                <span>타이틀</span><span>구분</span><span>작성일</span>
+            </div>
+            <div class="page_all">
+                <div class="card_wrap">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="page3" class="competition_posting">
+        <div class="main_title"><span>공지 수정</span></div>
+        <div class="header_editor">
+            <div class="title_editor">
+                <span>제목 :</span>
+                <input type="text" id="title2" placeholder="제목을 입력해주세요">
+            </div>
+            <div class="division_editor">
+                <span>구분 :</span>
+                <select name="notice_type" id="notice_type2">
+                    <option value="notice_all">공지사항</option>
+                    <option value="event_all">이벤트</option>
+                    <option value="update_all">업데이트</option>
+                </select>
+            </div>
+        </div>
+        <div class="preview_editor">
+            <span>미리보기 :</span>        
+            <textarea name="preview" id="preview2"></textarea>
+        </div>
+        <textarea name="editor" id="editor2" >
+        </textarea>
+        <div class="submit">
+            <button id="cancel2">취소</button>
+            <button id="edit_btn">수정</button>
+        </div>
+    </section>
+
+</body>
+</html>

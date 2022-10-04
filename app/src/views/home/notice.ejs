@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="//font.elice.io/EliceDigitalBaeum.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>  
+    <link rel="stylesheet" href="/css/home/header.css">
+    <link rel="stylesheet" href="/css/home/notice.css">
+    <script src="/js/home/header.js"></script>
+    <script src="/js/home/notice.js"></script>
+    <title>ESPORT</title>
+</head>
+<body ondragstart="return false" onselectstart="return false">
+    <header>
+        <nav class="main_header">
+            <div class="header_title"><a href="/">ESPORT G</a></div>
+            <div class="my_page">
+                <div class="my_info">
+                    <%- my %>
+                </div>
+            </div>
+            <div id="open_btn" class="open_off">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="sidebar">
+                <div class="sidebar_top"></div>
+                <div class="my_page_sidemenu">
+                    <%- myside %>
+                </div>
+                <div class="sidemenu_list">
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="/competition">대회</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="/competition">모든 대회</a></li>
+                            <li><a href="/competition/ing">진행중인 대회</a></li>
+                            <li><a href="/competition/will">예정된 대회</a></li>
+                            <li><a href="/competition/end">종료된 대회</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="/notice">공지</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="/notice">공지사항</a></li>
+                            <li><a href="/notice/event">이벤트</a></li>
+                            <li><a href="/notice/update">업데이트</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="#">뉴스</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="">이번주 소식</a></li>
+                            <li><a href="">이번달 소식</a></li>
+                            <li><a href="">모든 소식</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="#">FAQ</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="">가이드</a></li>
+                            <li><a href="">청약철회</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="#">상점</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="">G PAY</a></li>
+                            <li><a href="">이벤트 상점</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="#">고객센터</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="">고객센터</a></li>
+                            <li><a href="">이의신청</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav_header">
+            <ul class="nav_menu_list">
+                <div class="menu_list">
+
+                    <div>
+                        <li><a href="/competition">대회</a></li>
+                        <ul class="menu_1">
+                            <div class="menu_stick"></div>
+                            <li><a href="/competition">모든 대회</a></li>
+                            <li><a href="/competition/ing">진행중인 대회</a></li>
+                            <li><a href="/competition/will">예정된 대회</a></li>
+                            <li><a href="/competition/end">종료된 대회</a></li>
+                        </ul>
+                    </div>
+ 
+                    <div>
+                        <li><a href="/notice">공지</a></li>
+                        <ul class="menu_2">
+                            <div class="menu_stick"></div>
+                            <li><a href="/notice">공지사항</a></li>
+                            <li><a href="/notice/event">이벤트</a></li>
+                            <li><a href="/notice/update">업데이트</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <li><a href="">뉴스</a></li>
+                        <ul class="menu_3">
+                            <div class="menu_stick"></div>
+                            <li><a href="">이번주 소식</a></li>
+                            <li><a href="">이번달 소식</a></li>
+                            <li><a href="">모든 소식</a></li>
+                        </ul>
+                    </div>
+  
+                    <div>
+                        <li><a href="">FAQ</a></li>
+                        <ul class="menu_4">
+                            <div class="menu_stick"></div>
+                            <li><a href="">가이드</a></li>
+                            <li><a href="">청약철회</a></li>
+                        </ul>
+                    </div>
+         
+                    <div>
+                        <li><a href="">상점</a></li>
+                        <ul class="menu_5">
+                            <div class="menu_stick"></div>
+                            <li><a href="">G PAY</a></li>
+                            <li><a href="">이벤트 상점</a></li>
+                        </ul>
+                    </div>
+            
+                    <div>
+                        <li><a href="">고객센터</a></li>
+                        <ul class="menu_6">
+                            <div class="menu_stick"></div>
+                            <li><a href="">대회 신청</a></li>
+                            <li><a href="">고객센터</a></li>
+                            <li><a href="">이의신청</a></li>
+                        </ul>
+                    </div>
+   
+                </div>
+                <div class="menu_lanking_news">
+                    <span>[ E 스포츠 대회 매칭 플랫폼 ]</span>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="sidebar_wrap"></div>
+
+    <section class="notice_frame">
+        <div class="main_notice">
+            <span>공지사항</span>
+            <div class="wrap">
+            </div>
+        </div>
+        <div class="notice_all">
+            <div class="downmenu_all">
+                <li class="menu1"><a class="menu_link" href="/notice">전체</a></li>
+                <hr>
+                <li class="menu2"><a class="menu_link" href="/notice/notice">공지사항</a></li>
+                <hr>
+                <li class="menu3"><a class="menu_link" href="/notice/event">이벤트</a></li>
+                <hr>
+                <li class="menu4"><a class="menu_link" href="/notice/update">업데이트</a></li>
+            </div>
+            <div class="division">
+                <span>타이틀</span><span>구분</span><span>작성일</span>
+            </div>
+            <div class="page_all">
+                <div class="card_wrap">
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

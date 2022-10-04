@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="//font.elice.io/EliceDigitalBaeum.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>  
+    <link rel="stylesheet" href="/css/home/header.css">
+    <link rel="stylesheet" href="/css/home/my_page.css">
+    <script src="/js/home/header.js"></script>
+    <script src="/js/home/my_page.js"></script>
+    <title>ESPORT G</title>
+</head>
+<body>
+    <header>
+        <nav class="main_header">
+            <div class="header_title"><a href="/">ESPORT G</a></div>
+            <div class="my_page">
+                <div class="my_info">
+                    <div class="my_profile_id">
+                        <a href="/mypage" id="my_id"><%= userid %></a>
+                        <span id="my_email"><%= useremail %></span>
+                        <div class="my_profile_link">
+                            <a href="/">홈으로</a>
+                            <a href="/logout">로그아웃</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="open_btn" class="open_off">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="sidebar">
+                <div class="sidebar_top"></div>
+                <div class="my_page_sidemenu">
+                    <div class="my_info_sidemenu">
+                        <div class="my_profile_id_sidemenu">
+                            <a id="my_id_sidemenu"><%= userid %></a>
+                            <span id="my_email_sidemenu"><%= useremail %></span>
+                            <div class="my_profile_link_sidemenu">
+                                <a href="/">홈으로</a>
+                                <a href="/logout">로그아웃</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my_esportgpay_sidemenu">
+                        <div class="gpay_title_sidemenu">
+                            <span>GPAY</span>
+                            <a href="">충전하러 가기 ></a>
+                        </div>
+                        <div class="gmoney_title_sidemenu">
+                            <span>잔액 :</span>
+                            <span id="my_gmoney_sidemenu"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidemenu_list">
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="/competition">대회</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="/competition">모든 대회</a></li>
+                            <li><a href="/competition/ing">진행중인 대회</a></li>
+                            <li><a href="/competition/will">예정된 대회</a></li>
+                            <li><a href="/competition/end">종료된 대회</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="/notice">공지</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="/notice">공지사항</a></li>
+                            <li><a href="/notice/event">이벤트</a></li>
+                            <li><a href="/notice/update">업데이트</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="#">뉴스</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="">이번주 소식</a></li>
+                            <li><a href="">이번달 소식</a></li>
+                            <li><a href="">모든 소식</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="#">FAQ</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="">가이드</a></li>
+                            <li><a href="">청약철회</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="#">상점</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="">ESPORT G PAY</a></li>
+                            <li><a href="">이벤트 상점</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidemenu">
+                        <div class="menu_title"><a href="#">고객센터</a><i class="fas fa-angle-up"></i></i></div>
+                        <ul class="panel_sidemenu">
+                            <li><a href="">고객센터</a></li>
+                            <li><a href="">이의신청</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav_header">
+            <ul class="nav_menu_list">
+                <div class="menu_list">
+
+                    <div>
+                        <li><a href="/competition">대회</a></li>
+                        <ul class="menu_1">
+                            <div class="menu_stick"></div>
+                            <li><a href="/competition">모든 대회</a></li>
+                            <li><a href="/competition/ing">진행중인 대회</a></li>
+                            <li><a href="/competition/will">예정된 대회</a></li>
+                            <li><a href="/competition/end">종료된 대회</a></li>
+                        </ul>
+                    </div>
+ 
+                    <div>
+                        <li><a href="/notice">공지</a></li>
+                        <ul class="menu_2">
+                            <div class="menu_stick"></div>
+                            <li><a href="/notice">공지사항</a></li>
+                            <li><a href="/notice/event">이벤트</a></li>
+                            <li><a href="/notice/update">업데이트</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <li><a href="">뉴스</a></li>
+                        <ul class="menu_3">
+                            <div class="menu_stick"></div>
+                            <li><a href="">이번주 소식</a></li>
+                            <li><a href="">이번달 소식</a></li>
+                            <li><a href="">모든 소식</a></li>
+                        </ul>
+                    </div>
+  
+                    <div>
+                        <li><a href="">FAQ</a></li>
+                        <ul class="menu_4">
+                            <div class="menu_stick"></div>
+                            <li><a href="">가이드</a></li>
+                            <li><a href="">청약철회</a></li>
+                        </ul>
+                    </div>
+         
+                    <div>
+                        <li><a href="">상점</a></li>
+                        <ul class="menu_5">
+                            <div class="menu_stick"></div>
+                            <li><a href="">G PAY</a></li>
+                            <li><a href="">이벤트 상점</a></li>
+                        </ul>
+                    </div>
+            
+                    <div>
+                        <li><a href="">고객센터</a></li>
+                        <ul class="menu_6">
+                            <div class="menu_stick"></div>
+                            <li><a href="">대회 신청</a></li>
+                            <li><a href="">고객센터</a></li>
+                            <li><a href="">이의신청</a></li>
+                        </ul>
+                    </div>
+   
+                </div>
+                <div class="menu_lanking_news">
+                    <span>[ E 스포츠 대회 매칭 플랫폼 ]</span>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="sidebar_wrap"></div>
+
+    <section class="my_Page">
+        <div class="my_Page_title">
+            <a href="">내 계정 정보</a>
+        </div>
+        <hr>
+        <div class="my_Info">
+            <div class="myInfo_key">
+                <ul>
+                    <span>회원정보</span>
+                    <hr>
+                    <li class="myInfo_1"><a>기본회원정보</a></li>
+                    <li class="myInfo_2"><a>내 게임</a></li>
+                    <li class="myInfo_3"><a>회원 탈퇴</a></li>
+                    <li class="myInfo_4"><a>개인정보 이용현황</a></li>
+                </ul>
+                <ul>
+                    <span>내 전적 및 기록</span>
+                    <hr>
+                    <li class="myInfo_5"><a>내 대회 현황</a></li>
+                    <li class="myInfo_6"><a>내 티어등급</a></li>
+                    <li class="myInfo_7"><a>활동 기록</a></li>
+                </ul>
+                <ul>
+                    <span>게임코인</span>
+                    <hr>
+                    <li class="myInfo_8"><a>내 EG PAY</a></li>
+                    <li class="myInfo_9"><a>EG COIN 충전하기</a></li>
+                    <li class="myInfo_10"><a>EG PAY 사용내역</a></li>
+                    <li class="myInfo_11"><a>EG PAY 충전내역</a></li>
+                </ul>
+            </div>
+            <div class="myInfo_value">
+                <div id="myInfo_1" class="myInfo_inner">
+                    <div class="myInfo_inner_title">
+                        <span>기본회원정보</span>
+                    </div>
+                    <hr>
+                    <div class="myInfo_inner_main">
+                        <div class="myInfo_inner_key">
+                            <div><a>아이디</a></div>
+                            <div><a>이름</a></div>
+                            <div><a>이메일</a></div>
+                            <div><a>비밀번호</a></div>
+                        </div>
+                        <div class="myInfo_inner_value">
+                            <div><a><%= userid %></a></div>
+                            <div><a><%= username %></a></div>
+                            <div><a><%= useremail %></a></div>
+                            <div>
+                                <a><%= userpsword %></a>
+                                <a class="update" href="/lookforpw">비밀번호 변경</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="myInfo_inner_ctf">
+                        <span>이름과 비밀번호는 이메일 인증 후 확인 가능합니다.</span>
+                        <button>이메일 인증</button>
+                    </div>
+                </div>
+                <div id="myInfo_2" class="myInfo_inner">
+                    <div class="myInfo_inner_title">
+                        <span>내 게임</span>
+                    </div>
+                    <hr>
+                    
+                    <div class="myGame">
+                        <div class="battle_kakao">
+                            <a>배틀그라운드(카카오서버)</a>
+                            <hr>
+                            <div class="myGame_inner">
+                                <span>[미등록] 게임 아이디 등록 후 본 게임 대회 참가가 가능합니다</span>
+                                <button>등록</button>
+                            </div>
+                        </div>
+                        <div class="battle_steam">
+                            <a>배틀그라운드(스팀서버)</a>
+                            <hr>
+                            <div class="myGame_inner">
+                                <span>[미등록] 게임 아이디 등록 후 본 게임 대회 참가가 가능합니다</span>
+                                <button>등록</button>
+                            </div>
+                        </div>
+                        <div class="valorant">
+                            <a>발로란트</a>
+                            <hr>
+                            <div class="myGame_inner">
+                                <span>[미등록] 게임 아이디 등록 후 본 게임 대회 참가가 가능합니다</span>
+                                <button>등록</button>
+                            </div>
+                        </div>
+                        <div class="overwatch">
+                            <a>오버워치&emsp;OVERWATCH</a>
+                            <hr>
+                            <div class="myGame_inner">
+                                <span>[미등록] 게임 아이디 등록 후 본 게임 대회 참가가 가능합니다</span>
+                                <button>등록</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="myInfo_3" class="myInfo_inner">
+                    <div class="myInfo_inner_title">
+                        <span>회원 탈퇴</span>
+                    </div>
+                    <hr>    
+                    <div class="mySignout">
+                        <div class="agreement">
+                            <div class="agree">
+                                <span>회원 탈퇴 약관 동의<b>(필수)*</b></span>	
+                                <label class="check">
+                                    <input type="checkbox">
+                                    <span class="icon"></span>
+                                </label>
+                            </div>
+                            <div class="mySignout_content">
+                                ① 회원은 언제든지 회사 모바일 앱 또는 홈페이지에서 회사가 정하는 방법으로 회원 탈퇴를 할 수 있습니다. <br>
+                                ② 회원이 다음 각 호에 해당하는 경우, 회사는 당해 회원에 대한 통보로서 회원의 자격을 상실 시킬 수 있습니다. 단, 1)호의 경우에는 별도의 통보 없이 당연히 자격이 상실됩니다  <br>
+                                1) 회원이 사망한 경우 <br>
+                                2) 회원가입 신청 시 허위 내용을 등록, 기재 혹은 고지한 경우 <br>
+                                ③ 회원 탈퇴 또는 회원 자격 상실의 경우 제4항의 신규가입 제한 및 제11조 제2항의 서비스 제한을 위한 필요최소한의 정보를 제외한 회원의 모든 개인정보와 포인트가 즉시 소멸됩니다. 포인트는 소멸 후 복구가 불가능합니다. 단, 사망으로 인한 회원 자격상실의 경우에는 회원 사망 일에 자격상실이 확정되며, 당해 회원에게 제공된 서비스와 관련된 권리와 의무, 보유 포인트에 대해서는 당해 회원의 상속인에게 상속되지 않습니다. <br>
+                                ④ 회원 탈퇴 후, 신규 가입은 30일 이후 가능하며, 30일 이후 가입 시에는 기존의 아이디와 비밀번호는 사용이 불가 합니다. <br>
+                            </div>
+                        </div>
+                        <div class="agreement">
+                            <div class="agree">
+                                <span>정말 탈퇴하시겠습니까?</span>	
+                                <label class="check">
+                                    <input type="checkbox">
+                                    <span class="icon"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <button>회원 탈퇴</button>
+                    </div>
+                </div>
+                <div id="myInfo_4" class="myInfo_inner">
+                    <div class="myInfo_inner_title">
+                        <span>개인정보 이용현황</span>
+                    </div>
+                    <hr>
+                </div>
+                <div id="myInfo_5" class="myInfo_inner">
+                    <div class="myInfo_inner_title">
+                        <span>내 대회 현황</span>
+                    </div>
+                    <hr>
+                </div>
+                <div id="myInfo_6" class="myInfo_inner">
+                    <div class="myInfo_inner_title">
+                        <span>내 티어등급</span>
+                    </div>
+                    <hr>
+                </div>
+                <div id="myInfo_7" class="myInfo_inner">
+                    <div class="myInfo_inner_title">
+                        <span>활동 기록</span>
+                    </div>
+                    <hr>
+                </div>
+                <div id="myInfo_8" class="myInfo_inner">
+                    <div class="myInfo_inner_title">
+                        <span>내 EG PAY</span>
+                    </div>
+                    <hr>
+                </div>
+                <div id="myInfo_9" class="myInfo_inner">
+                    <div class="myInfo_inner_title">
+                        <span>EG COIN 충전하기</span>
+                    </div>
+                    <hr>
+                </div>
+                <div id="myInfo_10" class="myInfo_inner">
+                    <div class="myInfo_inner_title">
+                        <span>EG PAY 사용내역</span>
+                    </div>
+                    <hr>
+                </div>
+                <div id="myInfo_11" class="myInfo_inner">
+                    <div class="myInfo_inner_title">
+                        <span>EG PAY 충전내역</span>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

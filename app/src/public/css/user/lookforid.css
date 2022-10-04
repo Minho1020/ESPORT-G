@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right,#DB4455, #0096c6, #7fffd4, #ffcfff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    position: fixed;
+    top: 0;
+}
+.main_header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.main_title {
+    padding: 15px 40px;
+}
+.main_title > a {
+    text-decoration: none;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+.form {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.login_title {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fafafa;
+    width: 85%;
+}
+.id_page {
+    width: 460px;
+    display: none;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    transition: all .35s;
+    flex-direction: column;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 0;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5), 0 5px 5px 0 rgba(255, 255, 255, 0.24);
+}
+.login_page {
+    width: 460px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .35s;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 0;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5), 0 5px 5px 0 rgba(255, 255, 255, 0.24);
+}
+.login-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.login-form > span {
+    font-family: "Elice Digital Baeum",sans-serif;
+    color: white;
+    font-size: 17px; 
+    display: flex;   
+    width: 80%;
+}
+.login-form > span > p {
+    font-family: "Elice Digital Baeum",sans-serif;
+    color: #DB4455;
+    font-size: 19px;    
+}
+.lookFor {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.lookFor > a {
+    font-family: "Elice Digital Baeum",sans-serif;
+    text-decoration: none;
+    color: white;
+}
+.lookFor > a:hover {
+    text-decoration: underline white;
+}
+.form input {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    outline: 0;
+    background: #f2f2f2;
+    width: 85%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#mailer {
+    position: absolute;
+    right: 7%;
+    top: 0;
+    z-index: 2;
+    width: 120px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 11px 2px;
+    color: #000;
+    font-weight: 600;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 15px;
+    color: #DB4455;
+    outline: 0;
+    border-radius: 10px;
+    border: solid 3px #DB4455;
+    text-align: center;
+}
+#mailer:hover {
+    color: #fafafa;
+    background-color: #DB4455;
+}
+#checker {
+    position: absolute;
+    right: 7%;
+    top: 0;
+    width: 120px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 11px 2px;
+    color: #000;
+    font-weight: 600;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 15px;
+    color: #DB4455;
+    outline: 0;
+    border-radius: 10px;
+    border: solid 3px #DB4455;
+    text-align: center;
+}
+#checker:hover {
+    color: #fafafa;
+    background-color: #DB4455;
+}
+.form #next_btn {
+    font-family: "Elice Digital Baeum",sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #fafafa;
+    width: 75%;
+    text-align: center;
+    border: 0;
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+.form #btn {
+    font-family: "Elice Digital Baeum",sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #fafafa;
+    width: 75%;
+    text-decoration: none;
+    text-align: center;
+    border: 0;
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+.message {
+    margin-top: 20px;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 85%;
+    text-align: center;
+}
+.message > a{
+    margin-left: 30px;
+    color: rgb(238, 238, 238);
+}
+@media screen and (max-width: 460px) {
+    .login_page {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .main_title {
+        padding: 5px 20px;
+    }
+    .main_title > a {
+        font-size: 35px;
+    }
+}

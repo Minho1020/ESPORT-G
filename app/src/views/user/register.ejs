@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/user/register.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="//font.elice.io/EliceDigitalBaeum.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="/js/user/register.js"></script>
+    <title>ESPORT G</title>
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <header>
+        <div class="main_header">
+            <div class="main_title"><a href="">ESPORT G</a></div>
+        </div>
+    </header>
+    <div class="register_page">
+        <div class="form">
+            <div class="register_title"><span>회원가입</span></div>
+            <div class="register-form">
+                <div class="id">
+                    <input id="id" type="text" placeholder="아이디"/>
+                    <div class="checkbox">
+                        <i class="far fa-times-circle"></i>
+                        <i class="far fa-check-circle"></i>
+                    </div>
+                </div>
+                
+                <p class="error_info" id="er_id">영어 대소문자 + 숫자&emsp;8자 이상</p>
+
+                <div class="name">
+                    <input id="name" type="text" placeholder="이름"/>
+                    <div class="checkbox">
+                        <i class="far fa-times-circle"></i>
+                        <i class="far fa-check-circle"></i>
+                    </div>
+                </div>
+
+                <p class="error_info" id="er_name">본명을 입력해주세요</p>
+
+                <div class="email">
+                    <input id="email" type="email" placeholder="이메일"/>
+                    <div class="checkbox">
+                        <i class="far fa-times-circle"></i>
+                        <i class="far fa-check-circle"></i>
+                    </div>
+                    <Button id="mailer">인증번호 발송</Button>
+                </div>
+
+                <p class="error_info" id="er_email">example@example.com</p>
+                <div id="mailer_box">
+                    <input id="check_number" type="text" placeholder="인증번호">
+                    <Button id="checker">인증</Button>
+                    <div class="checkbox">
+                        <i class="far fa-times-circle"></i>
+                        <i class="far fa-check-circle"></i>
+                    </div>
+                </div>
+                <p class="error_info" id="er_email_ctf">인증번호 일치</p>
+
+                <div class="psword">
+                    <input id="psword" type="password" placeholder="비밀번호"/>
+                    <div class="checkbox">
+                        <i class="far fa-times-circle"></i>
+                        <i class="far fa-check-circle"></i>
+                    </div>
+                </div>
+
+                <p class="error_info" id="er_psword">영어 대소문자 + 숫자 + 특수문자&emsp;8자 이상</p>
+
+                <div class="confirm-psword">
+                    <input id="confirm-psword" type="password" placeholder="비밀번호 확인"/>
+                    <div class="checkbox">
+                        <i class="far fa-times-circle"></i>
+                        <i class="far fa-check-circle"></i>
+                    </div>
+                </div>
+
+                <p class="error_info" id="er_confirm-psword">비밀번호 일치</p>
+
+            </div>
+            <div class="last">
+                <button id="btn">회원가입</button>
+                <p class="message">Already registered? <a href="/login">로그인하기</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

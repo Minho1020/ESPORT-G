@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right,#DB4455, #0096c6, #7fffd4, #ffcfff);
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+header {
+    top: 0;
+    position: fixed;
+}
+.main_header {
+    width: 100%;
+    margin-bottom: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.main_title {
+    padding: 15px 40px;
+}
+.main_title > a {
+    text-decoration: none;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+.form {
+   width: 100%;
+   height: 700px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+.register_title {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fafafa;
+    width: 85%;
+}
+.register_page {
+    width: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5), 0 5px 5px 0 rgba(255, 255, 255, 0.24);
+}
+.error_info {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    width: 80%;
+    text-align: left;
+    color: #DB4455;
+    display: none;
+}
+.register-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.register-form > div > div {
+    position: absolute;
+    right: 10%;
+    font-size: 20px;
+}
+.register-form > div > div > i:nth-child(1) {color: #DB4455; display: none;}
+.register-form > div > div > i:nth-child(2) {color: #00bf00;display: none;}
+.register-form > div > input {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    width: 85%;
+    border: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 10px;
+}
+#mailer {
+    position: absolute;
+    right: 16%;
+    top: 9%;
+    z-index: 2;
+    width: 120px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 5px 2px;
+    font-weight: 600;
+    display: none;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 15px;
+    color: #DB4455;
+    outline: 0;
+    border-radius: 5px;
+    border: solid 3px #DB4455;
+    text-align: center;
+}
+#mailer_box {
+    width: 100%;
+    margin-top: 5px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#mailer:hover {
+    color: #fafafa;
+    background-color: #DB4455;
+}
+#checker:hover {
+    color: #fafafa;
+    background-color: #DB4455;
+}
+#check_number {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    outline: 0;
+    background: #f2f2f2;
+    width: 85%;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+#checker {
+    position: absolute;
+    right: 16%;
+    top: 9%;
+    width: 120px;
+    background: #fafafa;
+    padding: 5px 2px;
+    color: #000;
+    font-weight: 600;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 15px;
+    color: #DB4455;
+    outline: 0;
+    border-radius: 5px;
+    border: solid 3px #DB4455;
+    text-align: center;
+}
+.form #btn {
+    font-family: "Elice Digital Baeum",sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #fafafa;
+    width: 85%;
+    border: 0;
+    padding: 15px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+.last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.message {
+    margin-top: 20px;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 85%;
+    text-align: center;
+}
+.message > a{
+    margin-left: 30px;
+    color: rgb(238, 238, 238);
+}
+.register-form > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 15px;
+}
+@media screen and (max-width: 460px) {
+    .register_page {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .main_title {
+        padding: 5px 20px;
+    }
+    .main_title > a {
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'SDSamliphopangche_Basic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.my_Page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 164px;
+    width: 100%;
+}
+.my_Page_title {
+    margin-top: 50px;
+    display: flex;
+    width: 85%;
+    text-decoration: none;
+    color: black;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 38px;
+}
+.my_Page_title > a {
+    text-decoration: none;
+    color: black;
+}
+.my_Page > hr {
+    width: 85%;
+    height: 5px;
+    border: 0;
+    background-color: #111;
+}
+.my_Info {
+    margin-top: 35px;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+}
+.myInfo_key {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.myInfo_key > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 0;
+    padding-bottom: 18px;
+}
+.myInfo_key > ul > hr {
+    width: 200px;
+    height: 2px;
+    background-color: #555;
+    border: 0;
+}
+.myInfo_key > ul > span {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 20px;
+}
+.myInfo_key > ul > li {
+    list-style: none;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 5px 0;
+}
+.myInfo_key > ul > li > a:hover {
+    text-decoration: underline black;
+    cursor: pointer;
+}
+.choosed {
+    color: #DB4455;
+    text-decoration: underline #DB4455;
+}
+
+
+.myInfo_value {
+    width: 80%;
+    position: relative;
+}
+.myInfo_inner {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    border: solid 1px #292929;
+    justify-content: flex-start;
+}
+.selected {
+    display: flex;
+}
+#myInfo_1 {
+    overflow: hidden;
+}
+.myInfo_inner_title {
+    display: flex;
+    margin: 20px 40px;
+    text-decoration: none;
+    color: black;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 27px;
+}
+.myInfo_inner > hr {
+    border: 0;
+    height: 1px;
+    background-color: #292929;
+}
+.myInfo_inner_main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+.myInfo_inner_key {
+    width: 30%;
+    list-style: none;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.myInfo_inner_key > div {
+    width: 100%;
+    padding: 25px 0;
+    background-color: rgb(231, 231, 231);
+    border-top: solid 1px #777;
+    border-right: solid 1px #777;
+}
+.myInfo_inner_key > div > a {
+    padding: 25px 45px;
+}
+.myInfo_inner_key > div:nth-child(4) {
+    border-bottom: solid 1px #555;
+}
+.myInfo_inner_value > div:nth-child(4) {
+    border-bottom: solid 1px #555;
+    position: relative;
+}
+.myInfo_inner_value {
+    list-style: none;
+    width: 70%;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.myInfo_inner_value > div {
+    width: 100%;
+    padding: 25px 0;
+    border-top: solid 1px #555;
+    border-right: solid 1px #555;
+}
+.myInfo_inner_value > div > a {
+    padding: 25px 45px;
+}
+.myInfo_inner_value > div:nth-child(4) .update {
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+    transform: translateY(50%);
+    border: solid 1px #DB4455;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #DB4455;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.myInfo_inner_value > div:nth-child(4) .update:hover {
+    background-color: #DB4455;
+    color: #FFFAFA;
+}
+
+.myInfo_inner_ctf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.myInfo_inner_ctf > span {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 500;
+    color: #555;
+    font-size: 15px;
+}
+.myInfo_inner_ctf > button {
+    margin-top: 15px;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #DB4455;
+    border: solid 1px #DB4455;
+    padding: 15px 70px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.myInfo_inner_ctf > button:hover {
+    background-color: #DB4455;
+    color: #FFFAFA;
+}
+
+.myGame {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.myGame > div > a {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 600;
+    padding: 0 50px;
+    font-size: 22px;
+    color: black;
+}
+.myGame > div > hr {
+    border: 0;
+    height: 2px;
+    width: 95%;
+    margin-left: 20px;
+    background-color: #292929;
+}
+.myGame > div {
+    height: 100px;
+    padding: 50px 0;
+}
+.myGame_inner {
+    margin-top: 20px;
+    border: solid 2px #555;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 20px;
+}
+.myGame_inner:hover {
+    background-color: rgba(216, 216, 216, 0.3);
+    border: solid 2px #DB4455;
+}
+.myGame_inner > span {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 500;
+    padding: 35px 50px;
+    font-size: 16px;
+    text-align: center;
+    width: 50%;
+}
+.myGame_inner > button {
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+    transform: translateY(50%);
+    border: solid 1px #DB4455;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #DB4455;
+    padding: 10px 50px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.myGame_inner> button:hover {
+    background-color: #DB4455;
+    color: #FFFAFA;
+}
+
+.mySignout {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.agreement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+.agree {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.agree > span {
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-size: 18px;
+    
+}
+.mySignout_content {        
+    font-family: "Elice Digital Baeum",sans-serif;
+    overflow-y: scroll;
+    height: 150px;
+    border: solid 1px black;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.mySignout > button {
+    border: solid 1px #DB4455;
+    font-family: "Elice Digital Baeum",sans-serif;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #DB4455;
+    padding: 15px 80px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.mySignout> button:hover {
+    background-color: #DB4455;
+    color: #FFFAFA;
+}
+.check input {
+    display: none;
+}
+.check span {
+    display:inline-block;
+    vertical-align:middle;
+}
+.check .icon {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.check .icon::before, .check .icon::after {content:'';
+    display:inline-block;
+    width: 3px;
+    height: 0;
+    background-color: #ff1100;
+    position: absolute;
+    transform-origin:left top;
+    border-radius:10px;
+}
+.check .icon::before {top: 15px;
+    left: 2px;
+    transform: rotate(-45deg);
+}
+.check .icon::after {top: 23px;
+    left: 10px;
+    transform: rotate(-135deg);
+}
+.check input:checked ~ .icon {
+    border-color: #ff1100;
+}
+.check input:checked ~ .icon::before {
+    height: 10px;
+    transition:all .2s ease-in-out;
+}
+.check input:checked ~ .icon::after {
+    height: 24px;
+    transition:all .2s ease-in-out .2s;
+}
